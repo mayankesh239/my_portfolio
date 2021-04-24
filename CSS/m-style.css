@@ -1,7 +1,7 @@
 /*-------icon menu------------*/
 
 .icon-bar {
-    width: 90px;
+    width: 4.3vm;
     /* Set a specific width */
     position: fixed;
     top: 8vw;
@@ -14,13 +14,13 @@
     /* Make the links appear below each other instead of side-by-side */
     text-align: center;
     /* Center-align text */
-    padding: 16px;
+    padding: 0.8vw;
     /* Add some padding */
     transition: all 0.3s ease;
     /* Add transition for hover effects */
     color: white;
     /* White text color */
-    font-size: 36px;
+    font-size: 2.8vw;
     /* Increased font-size */
 }
 
@@ -39,12 +39,16 @@
 
 /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 
+#nav_nav{
+    font-size: "2.2vw";
+    padding-top: 0.61vw;
+}
 .flip-box {
     background-color: transparent;
-    width: 250px;
-    height: 40px;
-    border: 1px solid #f1f1f1;
-    perspective: 1000px;
+    width: 17vw;
+    height: 3vw;
+    border: 0.1vw solid #f1f1f1;
+    perspective: 50vw;
     /* Remove this if you don't want the 3D effect */
 }
 
@@ -52,7 +56,7 @@
 /* This container is needed to position the front and back side */
 
 .flip-box-inner {
-    position: relative;
+    /* position: relative; */
     width: 100%;
     height: 100%;
     text-align: center;
@@ -99,16 +103,16 @@
 
 #mainNav {
     font-family: Aldrich;
-    font-size: 1vw;
-    font-weight: bolder;
+    font-size: 1.2vw;
+    font-weight:bolder;
     font-variant: small-caps;
 }
 
 .navbar-b {
     transition: all .5s ease-in-out;
     background-color: rgba(29, 20, 20, 0.425);
-    padding-top: 1.563rem;
-    padding-bottom: 1.563rem;
+    padding-top: 1vm;
+    padding-bottom: 1vm;
 }
 
 .navbar-b:hover {
@@ -123,7 +127,7 @@
 .navbar-b.navbar-trans .nav-item,
 .navbar-b.navbar-reduce .nav-item {
     position: relative;
-    padding-right: 10px;
+    padding-right: 0.6vw;
     padding-left: 0;
 }
 
@@ -142,7 +146,7 @@
     width: 0%;
     bottom: 0;
     left: 0;
-    height: 2px;
+    height: 0.1vw;
     transition: all 500ms ease;
 }
 
@@ -153,7 +157,7 @@
 
 .navbar-b.navbar-trans .nav-link:hover:before,
 .navbar-b.navbar-reduce .nav-link:hover:before {
-    width: 35px;
+    width: 2.78vw;
 }
 
 .navbar-b.navbar-trans .show>.nav-link:before,
@@ -164,7 +168,7 @@
 .navbar-b.navbar-reduce .active>.nav-link:before,
 .navbar-b.navbar-reduce .nav-link.show:before,
 .navbar-b.navbar-reduce .nav-link.active:before {
-    width: 35px;
+    width: 2.78vw;
 }
 
 .navbar-b.navbar-trans .nav-link:before {
@@ -186,8 +190,8 @@
 .navbar-b.navbar-reduce {
     transition: all .5s ease-in-out;
     background-color: #fff;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 0.8vw;
+    padding-bottom: 0.8vw;
 }
 
 .navbar-b.navbar-reduce .nav-link {
@@ -235,10 +239,10 @@
 .navbar-toggler span {
     display: block;
     background-color: #fff;
-    height: 3px;
-    width: 25px;
-    margin-top: 4px;
-    margin-bottom: 4px;
+    height: 0.4vw;
+    width: 1.27vw;
+    margin-top: 0.3vw;
+    margin-bottom: 0.3vw;
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
     left: 0;
@@ -254,23 +258,23 @@
 
 .navbar-toggler:not(.collapsed) span:nth-child(1) {
     position: absolute;
-    left: 12px;
-    top: 10px;
+    left: 0.7vw;
+    top: 0.6vw;
     -webkit-transform: rotate(135deg);
     transform: rotate(135deg);
     opacity: 0.9;
 }
 
 .navbar-toggler:not(.collapsed) span:nth-child(2) {
-    height: 12px;
+    height: 0.8vw;
     visibility: hidden;
     background-color: transparent;
 }
 
 .navbar-toggler:not(.collapsed) span:nth-child(3) {
     position: absolute;
-    left: 12px;
-    top: 10px;
+    left: 0.8vw;
+    top: 0.6vw;
     -webkit-transform: rotate(-135deg);
     transform: rotate(-135deg);
     opacity: 0.9;
@@ -287,10 +291,10 @@
 /*------------------------home------------------------*/
 
 .intro {
-    width: 20em;
+    width: 40.6vw;
     margin: 0 auto;
     font-family: Allerta;
-    font-size: 60px;
+    font-size: 4vw;
     /* font-weight:bolder; */
     color: ghostwhite;
     margin-top: 4vw;
@@ -302,14 +306,14 @@
 }
 
 .intro1 {
-    width: 20em;
+    width: 40.6vw;
     margin: 0 auto;
     font-family: Allerta;
-    font-size: 60px;
+    font-size: 4vw;
     /* font-weight:bolder; */
     color: ghostwhite;
     margin-top: 14vw;
-    border-right: 2px solid rgba(204, 204, 204, 0.589);
+    /* border-right: 0.1vw solid rgba(204, 204, 204, 0.589); */
     white-space: nowrap;
     text-align: center;
 }
@@ -323,7 +327,7 @@
         width: 0;
     }
     to {
-        width: 10.3em;
+        width:40.6vw;
     }
 }
 
@@ -342,16 +346,17 @@
 
 /*------------------------about me------------------------*/
 
-.aboutme {
-    padding-top: 5vw;
+
+/* .aboutme {
+    padding-top: 2vw;
     padding-bottom: 2vw;
-}
+} */
 
 #ll {
     padding-bottom: 1vw;
     color: azure;
     font-weight: bolder;
-    font-size: 80px;
+    font-size: 3.5vw;
     text-align: center;
 }
 
@@ -359,17 +364,17 @@
     font-size: 2vw;
     font-family: Aldrich;
     font-style: normal;
-    padding-top: 4vw;
+    padding-top: 2vw;
     padding-bottom: 4vw;
     padding-left: 6vw;
     padding-right: 6vw;
     color: blanchedalmond;
-    border-left: 6px solid rgb(19, 60, 110);
-    background-color: rgba(211, 211, 211, 0.068);
+    /* border-left: 6px solid rgb(19, 60, 110);*/
+   background-color: rgba(211, 211, 211, 0.068); 
 }
 
 .row>.column {
-    padding: 5 30px;
+    padding: 2 3vw;
 }
 
 .row:after {
@@ -383,7 +388,7 @@
 
 .column {
     /* float: left; */
-    padding-left: 8vw;
+    padding-left: 2vw;
     padding-right: 1vw;
     width: 33%;
 }
@@ -403,7 +408,7 @@
     display: none;
     position: fixed;
     z-index: 1;
-    padding-top: 100px;
+    padding-top: 4vw;
     left: 0;
     top: 0;
     width: 100%;
@@ -421,7 +426,7 @@
     margin: auto;
     padding: 0;
     width: 90%;
-    max-width: 1200px;
+    max-width: 40vw;
 }
 
 
@@ -431,14 +436,14 @@
     color: black;
     background-color: white;
     position: absolute;
-    /* top: 10px; */
+    /* top: 0.6vw; */
     padding-top: 1vw;
     padding-bottom: 1vw;
     padding-right: 1vw;
     padding-left: 1vw;
-    right: 30px;
-    margin-top: 10px;
-    font-size: 35px;
+    right: 2.5vw;
+    margin-top: 1vw;
+    font-size: 2vw;
     font-weight: bold;
 }
 
@@ -469,14 +474,14 @@
     position: absolute;
     top: 50%;
     width: auto;
-    padding: 16px;
-    margin-top: -50px;
+    padding: 1.2vw;
+    margin-top: -2.5vw;
     background-color: white;
     color: black;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.2vw;
     transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
+    border-radius: 0 0.2vw 0.2vw 0;
     user-select: none;
     -webkit-user-select: none;
 }
@@ -486,7 +491,7 @@
 
 .next {
     right: 0;
-    border-radius: 3px 0 0 3px;
+    border-radius: 1vw 0 0 1vw;
 }
 
 
@@ -502,8 +507,8 @@
 
 .numbertext {
     color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
+    font-size: 2.5vw;
+    padding: 2vw 2.5vw;
     position: absolute;
     top: 0;
 }
@@ -514,7 +519,7 @@
 .caption-container {
     text-align: center;
     background-color: black;
-    padding: 2px 16px;
+    padding: 1vw 2.5vw;
     color: white;
 }
 
@@ -532,7 +537,7 @@ img.hover-shadow {
 }
 
 .hover-shadow:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 0.2px 1vwpx rgba(0, 0, 0, 0.2), 0 0.4vw 1.2vw 0 rgba(0, 0, 0, 0.19);
 }
 
 
@@ -551,7 +556,7 @@ img.hover-shadow {
     padding-bottom: 3vw;
     color: azure;
     font-weight: bolder;
-    font-size: 80px;
+    font-size: 3vw;
     text-align: center;
 }
 
@@ -560,8 +565,8 @@ img.hover-shadow {
 
 .flip-card {
     background-color: transparent;
-    width: 200px;
-    height: 200px;
+    width: 10vw;
+    height: 10vw;
     /* border: 2px solid #f1f1f1; */
     perspective: 1000px;
 }
@@ -602,7 +607,7 @@ img.hover-shadow {
 /* Style the front side (fallback if image is missing) */
 
 .flip-card-front {
-    background-color: #bbb;
+    /* background-color: #bbb; */
     color: black;
 }
 
@@ -621,14 +626,14 @@ img.hover-shadow {
     padding-bottom: 1vw;
     color: azure;
     font-weight: bolder;
-    font-size: 40px;
+    font-size: 3.5vw;
     text-align: center;
 }
 
 #ll-about_me1 {
     padding-bottom: 1vw;
     color: azure;
-    font-size: 30px;
+    font-size: 3.5vw;
     text-align: center;
 }
 
@@ -640,7 +645,7 @@ img.hover-shadow {
 
 .proj_heading {
     color: beige;
-    font-size: 80px;
+    font-size: 4.3vw;
     text-align: center;
     font-weight: bolder;
 }
@@ -649,21 +654,21 @@ img.hover-shadow {
     background-color: rgba(255, 187, 0, 0.507);
     color: maroon;
     font-family: sans-serif;
-    font-size: 30px;
+    font-size: 3.9vw;
 }
 
 .bottom2 {
     background-color: rgba(30, 255, 0, 0.144);
     color: rgba(255, 248, 220, 0.452);
     font-family: sans-serif;
-    font-size: 30px;
+    font-size: 3.9vw;
 }
 
 .bottom3 {
     background-color: rgba(0, 0, 255, 0.062);
     color: cornsilk;
     font-family: sans-serif;
-    font-size: 30px;
+    font-size: 3.9vw;
 }
 
 footer {
