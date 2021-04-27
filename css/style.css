@@ -24,7 +24,7 @@ body {
   width: 4.3vm;
   /* Set a specific width */
   position: fixed;
-  top: 8vw;
+  top: 20%;
   background-color: rgba(0, 0, 0, 0.521);
   /* Dark-grey background */
   font-family: Allerta;
@@ -398,38 +398,50 @@ body {
 
 /* project */
 .proje_txt {
-  color: black;
+  color: white;
   font-family: Allerta;
   font-weight: bold;
+  font-size: 2vw;
+ 
 }
 
-
-
 .carousel {
-  margin-bottom: 4rem;
+  margin-bottom: 20vw;
 }
 
 /* Since positioning the image, we need to help out the caption */
 
 .carousel-caption {
-  bottom: 3rem;
+  bottom:5vw;
   z-index: 10;
 }
 
 /* Declare heights because of positioning of img element */
 
 .carousel-item {
-  height: 32rem;
+  height: 32vw;
 }
 
 .carousel-item>img {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 32rem;
+  /* height: 32rem; */
+}
+
+.proj_heading {
+  color: beige;
+  font-size: 4.3vw;
+  text-align: center;
+  font-weight: bolder;
+}
+.button1{
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.548);
 }
 /* project */
+
 
 /* skills  */
 #my-skills-nav{
@@ -523,7 +535,7 @@ body {
   /* Add transition for hover effects */
   color: white;
   /* White text color */
-  font-size: 36px;
+  font-size: 2vw;
   /* Increased font size */
 }
 
