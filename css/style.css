@@ -107,139 +107,166 @@ body {
 
 
 /* home  */
-.intro {
-    width: 30vw;
-    margin: 0 auto;
-    font-size: 3vw;
-    font-weight: bolder;
-    color: ghostwhite;
-    margin-top: 4vw;
-    border-right: 2px solid rgba(204, 204, 204, 0.589);
-    white-space: nowrap;
-    text-align: center;
-    overflow: hidden;
-    transform: translateY(-50%);
+
+.home {
+    background-image: url("../images/J4o.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vmin;
+    display: flex;
+    flex-direction: column;
 }
 
 .intro1 {
+    font-size: 3vw;
     width: 40.6vw;
     margin: 0 auto;
-    font-family: Allerta;
-    font-size: 2.2vw;
+    font-family: Aldrich;
     color: aliceblue;
     margin-top: 14vw;
     white-space: nowrap;
     text-align: center;
+    padding-top: 2vw;
 }
 
-.animation-typewriter {
-    animation: typewriter 4s steps(30) 1s 1 normal both, blinkTextCursor 500ms steps(30) infinite normal;
-}
-
-@keyframes typewriter {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: 30.5vw;
-    }
-}
-
-@keyframes blinkTextCursor {
-    from {
-        border-right-color: rgba(204, 204, 204, 0.589);
-    }
-
-    to {
-        border-right-color: transparent;
-    }
+.intro1>div {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 
+.intro1>div:last-of-type span {
+    font-size: 3vw;
+    color: #ffffff;
+    animation: slide 6s;
+}
+
+
+@keyframes slide {
+    0% {
+        margin-left: -800px;
+    }
+
+    20% {
+        margin-left: -800px;
+    }
+
+    35% {
+        margin-left: 0px;
+    }
+
+    100% {
+        margin-left: 0px;
+    }
+}
+
+
+.intro1>h1>a {
+    text-decoration: none;
+    color: white;
+}
 
 /* about me  */
+#ll {
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    font-size: 3.5vw;
+    text-align: center;
+}
+
 .about_me1 {
-    background-color: grey;
+    background-color: rgb(255, 255, 255);
     background-attachment: fixed;
-    padding-bottom: 5vw;
+    padding-bottom: 1vw;
 }
 
 .img-container {
     text-align: center;
 }
 
-#ll {
-    padding-top: 3vw;
-    padding-bottom: 3vw;
-    color: azure;
-    font-weight: bolder;
-    font-size: 3.5vw;
-    text-align: center;
+.about_me {
+    display: flex;
+    flex-direction: row;
 }
 
 #introduction_about_me {
     font-size: 2vw;
     font-family: Aldrich;
     font-style: normal;
-    padding-top: 2vw;
-    padding-bottom: 4vw;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
     padding-left: 6vw;
     padding-right: 6vw;
     color: black;
-    background-color: white;
+    background-image: linear-gradient(140deg, #eadedbd8 0%, #689cb1c5 50%, #1a59a1bd 75%);
 }
 
-/* project */
-.proje_txt {
-    color: white;
-    font-family: Allerta;
-    font-weight: bold;
-    font-size: 2vw;
-
+#introduction_about_me:hover{
+    background-image: linear-gradient(140deg, #eadedbd8 0%, #689cb19f 50%, #1a59a146 75%);
+}
+.heading-primary-main {
+    display: block;
+    animation-name: moveInleft;
+    animation-duration: 3s;
 }
 
-.carousel {
-    margin-bottom: 20vw;
+.heading-primary-sub {
+    display: block;
+    animation-name: moveInRight;
+    animation-duration: 3s;
 }
 
-/* Since positioning the image, we need to help out the caption */
+@keyframes moveInleft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
 
-.carousel-caption {
-    bottom: 5vw;
-    z-index: 10;
+    80% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
 }
 
-/* Declare heights because of positioning of img element */
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
 
-.carousel-item {
-    height: 32vw;
-}
+    80% {
+        transform: translateX(-10px);
+    }
 
-.carousel-item>img {
-    position: relative;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    /* height: 32rem; */
-}
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
 
-.proj_heading {
-    color: beige;
-    font-size: 4.3vw;
-    text-align: center;
-    font-weight: bolder;
-}
-
-.button1 {
-    text-align: left;
-    background-color: rgba(0, 0, 0, 0.548);
 }
 
 
 /* skills  */
+.bg_color {
+    background-image: linear-gradient(140deg, #eadedbd8 0%, #689cb1c5 50%, #1a59a1bd 75%);
+}
+
+.bg_color:hover {
+    background-image: linear-gradient(140deg, #eadedbd8 0%, #689cb19f 50%, #1a59a146 75%);
+}
+
+
 #my-skills-nav {
-    padding-bottom: 4vw;
+    padding-bottom: 5vw;
+    padding-top: 5vw;
 }
 
 #ll1 {
@@ -267,6 +294,46 @@ body {
     margin-left: .75rem;
 }
 
+/* Non technical skills  */
+#non-technical-interest {
+    padding-bottom: 5vw;
+    padding-top: 5vw;
+}
+
+/* project */
+.proje_txt {
+    color: white;
+    font-family: Allerta;
+    font-weight: bold;
+    font-size: 2vw;
+
+}
+
+/* Since positioning the image, we need to help out the caption */
+
+.carousel-caption {
+    bottom: 5vw;
+    z-index: 10;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.726);
+}
+
+/* Declare heights because of positioning of img element */
+
+.carousel-item>img {
+    position: relative;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+}
+
+.proj_heading {
+    color: beige;
+    font-size: 4.3vw;
+    text-align: center;
+    font-weight: bolder;
+}
 
 /* contacts  */
 .icon-row {
@@ -321,4 +388,39 @@ footer {
     text-align: center;
     font-size: 2vw;
     color: white;
-  }
+}
+
+/* scroll to top button  */
+#myBtn {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: rgb(0, 20, 107);
+    /* Set a background color */
+    color: white;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 15px;
+    /* Some padding */
+    border-radius: 10px;
+    /* Rounded corners */
+    font-size: 18px;
+    /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color: #555;
+    /* Add a dark-grey background on hover */
+}
