@@ -75,7 +75,7 @@ window.onload = function () {
     // INJECT CSS
     var css = document.createElement("style");
     css.type = "text/css";
-    css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+    css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff; font-size: 3vw}";
     document.body.appendChild(css);
 };
 
