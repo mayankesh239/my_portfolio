@@ -374,6 +374,10 @@ body {
     background-color: rgba(47, 79, 79, 0.452);
 }
 
+.contact_layout{
+    display: flex;
+    flex-direction: row;
+}
 #ll2 {
     padding-bottom: vw;
     padding-top: 5vw;
@@ -424,3 +428,6 @@ footer {
     background-color: #555;
     /* Add a dark-grey background on hover */
 }
+
+
+
