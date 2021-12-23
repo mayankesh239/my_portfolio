@@ -198,6 +198,7 @@ body {
 }
 
 #introduction_about_me {
+    box-shadow: 10px 5px 5px black;
     font-size: 2vw;
     font-family: Aldrich;
     font-style: normal;
@@ -283,9 +284,9 @@ body {
     text-align: center;
 }
 
-.marketing .col-lg-4 {
-    margin-bottom: 1.5rem;
-    text-align: center;
+.marketing .col-lg-2 {
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.596);
+    margin: 1vw;
 }
 
 .marketing h2 {
@@ -297,6 +298,11 @@ body {
 .marketing .col-lg-4 p {
     margin-right: .75rem;
     margin-left: .75rem;
+}
+
+.card{
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.596);
+
 }
 
 /* Non technical skills  */
