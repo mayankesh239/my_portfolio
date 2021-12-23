@@ -285,7 +285,8 @@ body {
 }
 
 .marketing .col-lg-2 {
-    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.596);
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.596); 
+    
     margin: 1vw;
 }
 
