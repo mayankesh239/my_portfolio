@@ -319,7 +319,6 @@ body {
     font-family: Allerta;
     font-weight: bold;
     font-size: 2vw;
-
 }
 
 /* Since positioning the image, we need to help out the caption */
@@ -392,6 +391,9 @@ body {
     flex-direction: row;
 }
 
+.contact_layout>div{
+    padding: 2%;
+}
 #ll2 {
     padding-bottom: vw;
     padding-top: 5vw;
