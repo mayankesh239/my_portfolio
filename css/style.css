@@ -286,8 +286,8 @@ body {
 }
 
 .marketing .col-lg-2 {
-    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.596); 
-    
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.596);
+
     margin: 1vw;
 }
 
@@ -302,7 +302,7 @@ body {
     margin-left: .75rem;
 }
 
-.card{
+.card {
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.596);
 
 }
@@ -391,9 +391,10 @@ body {
     flex-direction: row;
 }
 
-.contact_layout>div{
+.contact_layout>div {
     padding: 2%;
 }
+
 #ll2 {
     padding-bottom: vw;
     padding-top: 5vw;
@@ -577,5 +578,10 @@ footer {
     .icon-bar a:hover {
         background-color: white;
         color: black;
+    }
+
+    .contact_layout {
+        display: flex;
+        flex-direction: column;
     }
 }
