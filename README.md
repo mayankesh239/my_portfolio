@@ -10,7 +10,7 @@ https://mayankesh239.github.io/my_portfolio/
 
 ### Built With
 
-The techs used in this are:
+The  techs used in this are:
 * HTML
 * CSS
 * JavaScript
